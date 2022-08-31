@@ -1,0 +1,26 @@
+%btn {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding: 10px 32px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.btnRed {
+  color: red;
+  @extend %btn;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
+.btnGreen {
+  color: green;
+  @extend %btn;
+  &:hover {
+    color: #fff;
+    background-color: #f00;
+  }
+}

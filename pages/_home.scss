@@ -1,0 +1,60 @@
+$selector: selector-nest(".a, .b", "p");
+
+    #{$selector} {
+        display: inline-block;
+       background-color: pink;
+       margin-bottom: 10px
+    }
+    .media-box {
+    p {
+        @include font-size(52, 55, 900);
+        background-color: red;
+        font-family: "FoundersGrotesk-Light";
+    }
+
+    background-color: red;
+
+    @include media-max('xxl') {
+        background-color: blue;
+    }
+
+    @include media-max('xl') {
+        background-color: blue;
+    }
+
+    @include media-max('lg') {
+        background-color: blue;
+    }
+
+    @include media-max('md') {
+        background-color: blue;
+    }
+
+    @include media-max('sm') {
+        background-color: blue;
+    }
+
+    @include media-min('xxl') {
+        background-color: blue;
+    }
+
+    @include media-min('xl') {
+        background-color: blue;
+    }
+
+    @include media-min('lg') {
+        background-color: blue;
+    }
+
+    @include media-min('md') {
+        background-color: blue;
+    }
+
+    @include media-min('sm') {
+        background-color: blue;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1600px) {
+        background-color: pink;
+    }
+}
